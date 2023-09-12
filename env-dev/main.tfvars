@@ -15,14 +15,17 @@ parameters = [
   {name = "dev.payment.user_port",value = "8080"},
   {name = "dev.payment.amqp_host",value = "rabbitmq-dev.msdevops72.online"},
   {name = "dev.payment.amqp_user",value = "roboshop"},
-  {name = "dev.payment.amqp_password",value = "rabbitmq_appuser_password"},
   {name = "dev.shipping.user",value = "roboshop"},
   {name = "dev.shipping.cart_endpoint",value = "cart-dev.msdevops72.online:8080"},
   {name = "dev.shipping.db_host",value = "mysql-dev.msdevops72.online"},
   {name = "dev.shipping.root_user",value = "root"},
-  {name = "dev.shipping.root_password",value = "RoboShop@1"},
   {name = "dev.user.user",value = "roboshop"},
   {name = "dev.user.mongo_environment",value = "true"},
   {name = "dev.user.redis_host",value = "redis-dev.msdevops72.online"},
   {name = "dev.user.mongo_url",value = "mongodb://mongodb-dev.msdevops72.online:27017/users"}
+]
+
+passwords = [
+  {name = "dev.shipping.root_password",value = "RoboShop@1"},
+  {name = "dev.payment.amqp_password",value = "roboshop123"}
 ]
